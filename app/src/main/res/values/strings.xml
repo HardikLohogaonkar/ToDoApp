@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="no_data">No Data</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="successfully_added">Successfully added!</string>
+    <string name="add">Add</string>
+    <string name="add_some_details">Please fill out all fields.</string>
+    <string name="search">Search</string>
+    <string name="update">Update</string>
+    <string name="undo">Undo</string>
+    <string name="successfully_updated">Data has been successfully updated.</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="delete_all">Delete All</string>
+    <string name="delete_everything">Delete everything?</string>
+    <string name="delete_everything_msg">Are you sure you want to remove everything?</string>
+    <string name="successfully_removed_everything">Successfully Removed Everything!</string>
+    <string name="app_exit_msg">Please click BACK again to exit</string>
+</resources>

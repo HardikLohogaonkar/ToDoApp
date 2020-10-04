@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="toDoData"
+            type="com.hul.todo.model.ToDoData" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/x6"
+        android:layout_marginTop="@dimen/x8"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/x8"
+        app:cardElevation="@dimen/x4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/x8">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/x4"
+                android:text="@{toDoData.title}"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/darkGray"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="This is Sample Text" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvDescText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="300"
+                android:maxLines="10"
+                android:padding="@dimen/x4"
+                android:text="@{toDoData.description}"
+                android:textColor="@color/darkGray"
+                app:layout_constraintStart_toStartOf="@id/tvTitleText"
+                app:layout_constraintTop_toBottomOf="@id/tvTitleText"
+                tools:text="This is Sample Text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

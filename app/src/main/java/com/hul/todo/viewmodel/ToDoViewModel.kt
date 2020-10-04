@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import com.hul.todo.app.ToDo
 import com.hul.todo.model.ToDoData
 import com.hul.todo.model.database.ToDoDatabase
-import com.hul.todo.repository.ToDoRepository
+import com.hul.todo.model.repository.ToDoRepository
 
 class ToDoViewModel : ViewModel() {
 

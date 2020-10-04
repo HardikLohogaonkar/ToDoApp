@@ -1,4 +1,4 @@
-package com.hul.todo.repository
+package com.hul.todo.model.repository
 
 import android.util.Log
 import androidx.lifecycle.LiveData
